@@ -1,0 +1,9 @@
+profile_form:
+  education_and_employment:
+    title: Education and employment
+    employment: Work history
+    education: Studies?
+profile:
+  education_and_employment:
+    employment: Work history
+    education: Studies?

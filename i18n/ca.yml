@@ -1,0 +1,9 @@
+profile_form:
+  education_and_employment:
+    title: Educació y treball
+    employment: Treballo de
+    education: Estudio
+profile:
+  education_and_employment:
+    employment: Treballo de
+    education: Estudio
