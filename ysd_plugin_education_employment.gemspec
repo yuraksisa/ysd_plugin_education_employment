@@ -9,5 +9,7 @@ Gem::Specification.new do |s|
   s.summary = "Extension for managing education and employment information"
   
   s.add_runtime_dependency "ysd_core_plugins"
-  
+  s.add_runtime_dependency "ysd_plugin_yito_ui"
+  s.add_runtime_dependency "ysd_md_fieldset"
+      
 end

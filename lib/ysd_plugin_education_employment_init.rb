@@ -1,5 +1,4 @@
 require 'ysd-plugins' unless defined?Plugins::Plugin
-require 'ysd_plugin_profile_education_employment_extension'
 
 Plugins::SinatraAppPlugin.register :education_employment do
 
