@@ -1,3 +1,4 @@
+require 'ysd_plugin_education_employment_aspect'
 require 'ysd_plugin_education_employment_extension'
 require 'ysd_plugin_education_employment_middleware'
 require 'ysd_plugin_education_employment_init'

@@ -1,9 +1,9 @@
-profile_form:
-  education_and_employment:
-    title: Education and employment
-    employment: Work history
-    education: Studies?
-profile:
-  education_and_employment:
-    employment: Work history
-    education: Studies?
+aspect:
+  education_employment: Education and employment
+education_and_employment_form:
+  title: Education and employment
+  employment: Work history
+  education: Studies?
+education_and_employment:
+  employment: Work history
+  education: Studies?

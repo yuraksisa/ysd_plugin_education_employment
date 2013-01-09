@@ -1,0 +1,10 @@
+     <div id="education_employment_form">
+        <div class="formrow">
+          <label for="education_and_employment_employment" class="fieldtitle"><%= t.education_and_employment_form.employment %></label>
+          <input type="text" name="education_and_employment_employment" id="education_and_employment_employment" maxlength="80" class="fieldcontrol"  <%% if (entity) { %> value="<%%= entity.education_and_employment_employment%>" <%% } %> />
+        </div>        
+        <div class="formrow">
+          <label for="education_and_employment_education" class="fieldtitle"><%= t.education_and_employment_form.education %></label>
+          <input type="text" name="education_and_employment_education" id="education_and_employment_education" maxlength="80" class="fieldcontrol" <%% if (entity) { %> value="<%%= entity.education_and_employment_education%>" <%% } %>  />
+        </div>
+     </div>

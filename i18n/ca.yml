@@ -1,9 +1,9 @@
-profile_form:
-  education_and_employment:
-    title: Educació y treball
-    employment: Treballo de
-    education: Estudio
-profile:
-  education_and_employment:
-    employment: Treballo de
-    education: Estudio
+aspect:
+  education_employment: Educació i treball
+education_and_employment_form:
+  title: Educació i treball
+  employment: Treballo de
+  education: Estudio
+education_and_employment:
+  employment: Treballo de
+  education: Estudio

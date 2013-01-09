@@ -1,4 +1,7 @@
+require 'ysd_md_fieldset_education_employment'
+require 'ui/ysd_ui_fieldset_render' unless defined?UI::FieldSetRender
 require 'ysd-plugins_viewlistener' unless defined?Plugins::ViewListener
+require 'ysd_plugin_education_employment_aspect'
 
 #
 # Extension
@@ -6,33 +9,23 @@ require 'ysd-plugins_viewlistener' unless defined?Plugins::ViewListener
 module Huasi
   class EducationEmploymentExtension < Plugins::ViewListener
   
-    # ---------------- Profile Hooks -------------------------      
-          
-    #
-    # Adds fields to edit the education and employment information in the profile form
-    #
-    def profile_form(context={})
+    # ========= Aspects ==================
     
+    #
+    # Retrieve an array of the aspects defined in the plugin
+    #
+    # The attachment aspect (complement)
+    #
+    def aspects(context={})
+      
       app = context[:app]
-    
-      renderer = UI::FieldSetRender.new('education_and_employment', app)      
-      location_form = renderer.render('form')
+      
+      aspects = []
+      aspects << ::Plugins::Aspect.new(:education_employment, app.t.aspect.education_employment, FieldSet::EducationEmployment, EducationEmploymentAspectDelegate.new)
+                                               
+      return aspects
        
-    end
-        
-    #
-    # Shows the education and employment information in the profile
-    #
-    def profile(context={}) 
-    
-      app = context[:app]
-    
-      renderer = UI::FieldSetRender.new('education_and_employment', app)      
-      location_template = renderer.render('view')
-    
-    end    
-
-    
+    end        
   
   end #ProfileEducationAndEmploymentExtension
 end #Huasi

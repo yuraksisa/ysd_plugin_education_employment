@@ -1,9 +1,9 @@
-profile_form:
-  education_and_employment:
-    title: Educación y empleo
-    employment: Trabajo de
-    education: Estudio
-profile:
-  education_and_employment:
-    employment: Trabajo de
-    education: Estudio
+aspect:
+  education_employment: Educación y empleo
+education_and_employment_form:
+  title: Educación y empleo
+  employment: Trabajo de
+  education: Estudio
+education_and_employment:
+  employment: Trabajo de
+  education: Estudio
